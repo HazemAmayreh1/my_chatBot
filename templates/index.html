@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI in Digital Marketing- ecourse</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='chatbot_image.png') }}" alt="Chatbot Image" class="chatbot-image">
+        <h1>AI in Digital Marketing- ecourse</h1>
+    </header>
+    <div id="chatbox">
+        <p><strong>Bot:</strong> Hi, how can I help you today?</p>
+    </div>
+    <input type="text" id="userInput" placeholder="Type your question and press Enter" onkeydown="if (event.keyCode == 13) { sendMessage(this.value); this.value=''; }">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
